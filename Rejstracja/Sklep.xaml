@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Rejstracja.Sklep"
+             Title="Sklep">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextColor" Value="Black"/>
+        </Style>
+
+        <Style x:Key="BaseButtonStyle" TargetType="Button">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button" BasedOn="{StaticResource BaseButtonStyle}">
+            <Setter Property="BackgroundColor" Value="LightGreen"/>
+        </Style>
+        
+        <Style x:Key="SecondaryButtonStyle" TargetType="Button" BasedOn="{StaticResource BaseButtonStyle}">
+            <Setter Property="BackgroundColor" Value="LightBlue"/>
+        </Style>
+
+        <Style x:Key="DangerButtonStyle" TargetType="Button" BasedOn="{StaticResource BaseButtonStyle}">
+            <Setter Property="BackgroundColor" Value="IndianRed"/>
+        </Style>
+
+        <Style x:Key="karta produktow" TargetType="Frame">
+            <Setter Property="Padding" Value="40"/>
+            <Setter Property="Margin" Value="40"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BackgroundColor" Value="Pink"/>
+            <Setter Property="BorderColor" Value="Black"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <VerticalStackLayout>
+        <Frame Style="{StaticResource karta produktow}">
+            <VerticalStackLayout Spacing="12">
+                <Label Text="Buty"/>
+                <Label Text="Cena: 100zł"/>
+
+                <Button Text="Dodaj do koszyka" Style="{StaticResource PrimaryButtonStyle}"/>
+                <Button Text="Zobacz wiecej" Style="{StaticResource SecondaryButtonStyle}"/>
+                <Button Text="Usun" Style="{StaticResource DangerButtonStyle}"/>
+
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

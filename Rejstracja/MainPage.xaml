@@ -32,6 +32,8 @@
             <Setter Property="TextColor" Value="Black"/>
             <Setter Property="CornerRadius" Value="8"/>
             <Setter Property="HeightRequest" Value="50"/>
+            <Setter Property="BorderColor" Value="black"/>
+            <Setter Property="BorderWidth" Value="2"/>
         </Style>
     </ContentPage.Resources>
     <ScrollView>

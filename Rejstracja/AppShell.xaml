@@ -19,5 +19,11 @@
                 ContentTemplate="{DataTemplate local:Sklep}"
                 Route="Sklep"/>
         </Tab>
+        <Tab Title="Motywy">
+            <ShellContent
+        Title="Motywy"
+        ContentTemplate="{DataTemplate local:Motywy}"
+        Route="Motywy"/>
+        </Tab>
     </TabBar>
 </Shell>
